@@ -11,6 +11,9 @@
 .flex {
     display: flex;
 }
+.wrap {
+    flex-wrap: wrap;
+}
 ul li {
     list-style-type: none;
     display: inline-block;
@@ -37,6 +40,19 @@ header ul li i {
 /* settaggio main */
 main {
     height: 80%;
+}
+.megacontainer {
+    margin: 0 auto;
+    width: 90%;
+}
+img {
+    display: block;
+}
+.justify-content-b {
+    justify-content: space-between;
+}
+.avatar {
+    flex-basis: calc( 60% / 7);
 }
 /* settaggio footer */
 footer {
