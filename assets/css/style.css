@@ -4,20 +4,77 @@
     box-sizing: border-box;
 }
 /* settaggi generici */
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
 .flex-end {
     display: flex;
-    justify-content: flex-end ;
+    justify-content: flex-end;
 }
 .flex {
     display: flex;
 }
+.flex-column {
+    flex-direction: column;
+}
+.justify-content-b {
+    justify-content: space-between;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
+}
+.text-center {
+    text-align: center;
+}
 .wrap {
     flex-wrap: wrap;
 }
-ul li {
-    list-style-type: none;
-    display: inline-block;
-    color: white;
+.right-top-20 {
+    top: 20px;
+    right: 20px;
+}
+.right-0 {
+    right: 20px;
+}
+.left-0 {
+    left: 0;
+}
+.top-0 {
+    top: 20px;
+}
+.bottom-0 {
+    bottom: 0;
+}
+.ab-full-orz {
+    left: 0;
+    right: 0;
+}
+.p-20 {
+    padding: 20px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.mx-10 {
+    margin: 0 10px;
+}
+.overflow-auto {
+    overflow: auto;
+}
+.z-index {
+    z-index: 1;
 }
 /* settaggio box */
 .box {
@@ -25,67 +82,36 @@ ul li {
     background-color: rgb(34, 32, 32);
 }
 /* settaggio header */
-header {
-    height: 10%;
+.labels {
+    background-color: rgb(142, 142, 142);
+    padding: 5px;
+    border-radius: 5px;
 }
-header ul li {
-    margin: 0 10px;
-    padding: 10px;
-    background-color: gray;
-    border-radius: 10px;
+.labels:first-child {
+    margin-right: 20px;
 }
-header ul li i {
-    font-size: small;
+.labels:first-child i{
+    margin-right: 10px;
 }
+
 /* settaggio main */
-main {
-    height: 80%;
+.card {
+    width: calc(90% / 7);
+    height: calc(60% / 5);
 }
-.megacontainer {
-    margin: 0 auto;
-    width: 90%;
-}
-img {
-    display: block;
-}
-.justify-content-b {
-    justify-content: space-between;
-}
-.avatar {
-    flex-basis: calc( 60% / 7);
+.zoom-label {
+    padding: 10px;
+    background-color: grey;
 }
 /* settaggio footer */
-footer {
-    height: 10%;
-    background-color: rgb(48, 1, 1);
+.bg-gray {
+    background-color: rgb(142, 142, 142);
+    color: white;
 }
-footer ul li {
-    display: inline-block;
+.end-meeting {
+    background-color: lightgray;
 }
-.inlineb {
-    display: inline-block;
-}
-.lateralesx .lateraledx {
-    flex: 2;
-    flex-basis: 20%;
-}
-.centrale {
-    flex: 1;
-    flex-basis: 60% ;
-    justify-content: center;
-    align-items: center;
-}
-.lateraledx {
-    justify-content: end;
-    align-items: center;
-}
-.lateralesx {
-    align-items: center;
-}
-footer i {
-    font-size: 40px;
-}
-span {
-    background-color: grey;
+.end-meeting a {
+    text-decoration: none;
     color: red;
 }
